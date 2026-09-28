@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ultimate Brand Bundle — YOUR BRAND KITS</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4643729829247929');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4643729829247929&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.5;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+
+  /* TOP BAR */
+  .top-bar {
+    background: #e63946;
+    color: #fff;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .top-bar .timer-block {
+    background: rgba(0,0,0,0.35);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 15px;
+  }
+
+  /* HEADER LOGO */
+  .header-logo {
+    text-align: center;
+    padding: 24px 20px;
+    border-bottom: 1px solid #1a1a1a;
+  }
+  .header-logo .logo {
+    display: inline-block;
+    height: 32px;
+  }
+  .header-logo .logo img { height: 100%; width: auto; }
+
+  /* HERO */
+  .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .hero-image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: #000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .hero-image img { width: 100%; height: 100%; object-fit: contain; }
+
+  .hero-content .badge {
+    display: inline-block;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+  .hero-content h1 {
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+  }
+  .hero-content h1 .highlight { color: #22c55e; display: block; }
+
+  .hero-content .description {
+    font-size: 16px;
+    color: #cfcfcf;
+    margin-bottom: 24px;
+    line-height: 1.7;
+  }
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: #cfcfcf;
+    font-size: 14px;
+  }
+  .stars { color: #fbbf24; font-size: 18px; letter-spacing: 2px; }
+
+  .price-box {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .price-current {
+    font-size: 42px;
+    font-weight: 800;
+    color: #22c55e;
+  }
+  .price-old {
+    font-size: 22px;
+    color: #666;
+    text-decoration: line-through;
+  }
+  .price-save {
+    background: #e63946;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .offer-ending {
+    color: #e63946;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .offer-ending::before { content: "● "; }
+  .payment-info {
+    font-size: 14px;
+    color: #cfcfcf;
+    margin-bottom: 24px;
+  }
+
+  .cta-button {
+    display: block;
+    width: 100%;
+    background: #22c55e;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 20px;
+  }
+  .cta-button:hover { background: #16a34a; }
+
+  .trust-badges {
+    display: flex;
+    gap: 20px;
+    color: #22c55e;
+    font-size: 13px;
+    flex-wrap: wrap;
+  }
+  .trust-badges span { display: flex; align-items: center; gap: 6px; }
+
+  /* PRODUCT ACCESS LIST */
+  .access-list {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+  .access-list h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .access-list ul { list-style: none; }
+  .access-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    color: #e0e0e0;
+    font-size: 15px;
+  }
+  .access-list li::before {
+    content: "✓";
+    color: #22c55e;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  /* TOOLS SECTION */
+  .tools-section {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .tools-section h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 60px;
+    line-height: 1.2;
+  }
+  .tools-image {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .tools-image img { width: 100%; height: auto; display: block; }
+
+  .subsection-title {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .subsection-list {
+    list-style: none;
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .subsection-list li {
+    padding: 10px 0;
+    color: #e0e0e0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .subsection-list li::before {
+    content: "●";
+    color: #22c55e;
+    font-size: 12px;
+  }
+
+  /* PLANILHAS BOX */
+  .single-box {
+    max-width: 320px;
+    margin: 60px auto 40px;
+  }
+  .single-box img { width: 100%; border-radius: 8px; }
+  .single-box-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 800;
+    margin-top: 20px;
+  }
+
+  /* MEMBERS AREA SECTION */
+  .members-section {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .members-section h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+  .members-section .subtitle {
+    color: #a0a0a0;
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+  .members-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 16/10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .members-image img { width: 100%; height: 100%; object-fit: cover; }
+  .members-image video { width: 100%; height: 100%; object-fit: contain; }
+
+  .features-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+  }
+  .feature {
+    text-align: center;
+  }
+  .feature .icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(34,197,94,0.15);
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #22c55e;
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+  .feature h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .feature p {
+    font-size: 14px;
+    color: #a0a0a0;
+    line-height: 1.5;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .testimonials h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+  .testimonials .subtitle {
+    color: #a0a0a0;
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
+  .testimonials-image {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .testimonials-image img { width: 100%; height: auto; display: block; }
+
+  /* BONUS SECTION */
+  .bonus-section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .bonus-section h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 40px;
+  }
+  .bonus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .bonus-item img {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+  }
+  .bonus-item p {
+    font-size: 15px;
+    color: #e0e0e0;
+    line-height: 1.5;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  /* URGENCY / FINAL OFFER */
+  .final-offer {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .urgency-tag {
+    color: #e63946;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+  .urgency-tag::before { content: "● "; }
+  .final-offer h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    line-height: 1.3;
+  }
+
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+  }
+  .countdown-unit {
+    background: #0a0a0a;
+    border-radius: 8px;
+    padding: 16px 20px;
+    min-width: 80px;
+  }
+  .countdown-unit .number {
+    font-size: 40px;
+    font-weight: 800;
+    color: #e63946;
+    line-height: 1;
+    font-family: monospace;
+  }
+  .countdown-unit .label {
+    font-size: 11px;
+    color: #a0a0a0;
+    text-transform: uppercase;
+    margin-top: 4px;
+    letter-spacing: 1px;
+  }
+  .countdown-sep {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: #e63946;
+    font-weight: 800;
+  }
+
+  .limited-offer-label {
+    color: #a0a0a0;
+    font-size: 15px;
+    margin: 20px 0 10px;
+  }
+  .old-price-label {
+    color: #a0a0a0;
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  .old-price-label s { color: #666; }
+  .big-price {
+    font-size: 80px;
+    font-weight: 900;
+    color: #22c55e;
+    line-height: 1;
+    margin: 10px 0 30px;
+  }
+  .feature-list {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .feature-list li {
+    padding: 6px 0;
+    color: #e0e0e0;
+    font-size: 15px;
+  }
+  .feature-list li::before { content: "✓ "; color: #22c55e; font-weight: 700; }
+
+  .urgency-text {
+    color: #a0a0a0;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+  /* FAQ */
+  .faq-section {
+    padding: 80px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .faq-section h2 {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .faq-item {
+    background: #0a0a0a;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .faq-question {
+    padding: 18px 22px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #e0e0e0;
+  }
+  .faq-question::after {
+    content: "▾";
+    color: #666;
+    font-size: 14px;
+    transition: transform 0.2s;
+  }
+  .faq-item.active .faq-question::after { transform: rotate(180deg); }
+  .faq-answer {
+    padding: 0 22px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    color: #a0a0a0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .faq-item.active .faq-answer {
+    padding: 0 22px 20px;
+    max-height: 500px;
+  }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid #1a1a1a;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  footer .footer-logo {
+    display: inline-block;
+    height: 32px;
+    margin-bottom: 12px;
+  }
+  footer .footer-logo img { height: 100%; width: auto; }
+  footer .copyright {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+  .footer-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .footer-col h4 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .footer-col p, .footer-col a {
+    font-size: 13px;
+    color: #a0a0a0;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero {
+      grid-template-columns: 1fr;
+      padding: 40px 20px;
+      gap: 40px;
+    }
+    .hero-content h1 { font-size: 40px; }
+    .features-row, .bonus-grid, .footer-cols {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .big-price { font-size: 60px; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <span>Letzte Chance · 75% Rabatt ⚡</span>
+    <div class="timer-block" id="topTimer">14 : 47</div>
+  </div>
+
+  <!-- HEADER LOGO -->
+  <div class="header-logo">
+    <div class="logo"><img src="logo-ybk-DaewnsGz.png" alt="YOUR BRAND KITS"></div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-image">
+      <!-- SUBSTITUA pela imagem do box do Ultimate Brand Bundle -->
+      <img src="Design sem nome (53).png" alt="The Ultimate Brand Bundle">
+    </div>
+    <div class="hero-content">
+      <div class="badge">ALLE TOOLS IN EINEM BUNDLE</div>
+      <h1>THE ULTIMATE <span class="highlight">BRAND BUNDLE</span></h1>
+      <p class="description">
+        Dieses Bundle wurde über 3 Jahre entwickelt, um Tools zu vereinen und zu erstellen, die auf Besitzer von Fashion-E-Commerce ausgerichtet sind. Es ist das ultimative Bundle für alle, die bereits eine Modemarke besitzen oder eine gründen möchten. Mockups, Vektoren, Vorlagen, Checklisten und vieles mehr, um Ideen in echte Kollektionen zu verwandeln, die sich verkaufen.
+      </p>
+      <div class="rating">
+        <span class="stars">★★★★★</span>
+        <span>(2632)</span>
+      </div>
+      <div class="price-box">
+        <div class="price-current">€24</div>
+        <div class="price-old">€97</div>
+        <div class="price-save">Spare €73</div>
+      </div>
+      <div class="offer-ending">Angebot endet bald</div>
+      <div class="payment-info">Einmalige Zahlung · Lebenslanger Zugang</div>
+      <a href="https://pay.hotmart.com/G107541740X?checkoutMode=10&offDiscount=RABATT75" target="_blank" rel="noopener" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">Jetzt kaufen – 75% RABATT</a>
+      <div class="trust-badges">
+        <span>🛡️ Sicherer Kauf</span>
+        <span>⬇️ Sofortiger Download</span>
+        <span>🕐 7 Tage Garantie</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESS LIST -->
+  <section class="access-list">
+    <h2>📦 Nach dem Download hast du Zugriff auf:</h2>
+    <ul>
+      <li>Über 500 Mockups in PNG, sortiert nach Typ und Farbe, in Full HD, mit Vorder- und Rückansicht</li>
+      <li>Über 400 Kleidungs-Vektoren für Tech Packs und Kollektionsorganisation</li>
+      <li>Über 30 bearbeitbare Mockups zum Farbwechsel in Sekunden in Photoshop</li>
+      <li>3D Mockup Oversized T-Shirt (Blender)</li>
+      <li>5 essenzielle Vorlagen für jeden Besitzer einer Modemarke</li>
+      <li>PDF Kollektions-Checkliste, um dein Launch zu organisieren, ohne etwas zu vergessen</li>
+      <li>Über 100 Content-Ideen für Social Media</li>
+      <li>🎁 Bonus: Professionelle Tech Pack Vorlage</li>
+    </ul>
+  </section>
+
+  <!-- TOOLS SECTION -->
+  <section class="tools-section">
+    <h2>Wir haben alle Tools zusammengeführt,<br>die ein Markenbesitzer braucht.</h2>
+
+    <div class="tools-image">
+      <img src="Design sem nome (52).png" alt="Mockups, Vektoren, Photoshop-Dateien und 3D-Modelle">
+    </div>
+
+    <h3 class="subsection-title">Mockups & Vektoren:</h3>
+    <ul class="subsection-list">
+      <li>+500 Mockups PNG</li>
+      <li>+400 Vektoren</li>
+      <li>+30 Mockups für Photoshop</li>
+      <li>3D-Dateien Oversized T-Shirt</li>
+    </ul>
+
+    <div class="single-box">
+      <img src="tabela.png" alt="Tabellen Ultimate Brand Bundle">
+      <div class="single-box-title">Vorlagen</div>
+    </div>
+
+    <ul class="subsection-list">
+      <li>📊 Produktpreiskalkulation</li>
+      <li>📅 Quartalsplaner</li>
+      <li>📦 Lagerverwaltung</li>
+      <li>💰 Verkaufsverwaltung</li>
+      <li>🤝 Influencer-Verwaltung</li>
+    </ul>
+  </section>
+
+  <!-- MEMBERS AREA -->
+  <section class="members-section">
+    <h2>Alles, was Besitzer von Modemarken brauchen,<br>an einem einzigen Ort.</h2>
+    <p class="subtitle">Ein organisierter und einfacher Bereich, um auf alles zuzugreifen.</p>
+
+    <div class="members-image">
+      <video src="ubp alemao.mp4" autoplay muted loop playsinline disablePictureInPicture controlsList="nodownload nofullscreen noremoteplayback" oncontextmenu="return false;" style="pointer-events: none;"></video>
+    </div>
+
+    <div class="features-row">
+      <div class="feature">
+        <div class="icon">✨</div>
+        <h3>Einfach, schnell und unbegrenzt</h3>
+        <p>Intuitive Oberfläche, um zu finden, was du brauchst</p>
+      </div>
+      <div class="feature">
+        <div class="icon">📂</div>
+        <h3>Download wann du willst und Nutzung ohne Grenzen</h3>
+        <p>Lebenslanger Zugang zu allen Dateien</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🔄</div>
+        <h3>Automatische Updates</h3>
+        <p>Neue Inhalte werden regelmäßig hinzugefügt</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <h2>Was unsere Kunden sagen</h2>
+    <p class="subtitle">Echte Meinungen von denen, die das Bundle bereits nutzen</p>
+
+    <div class="testimonials-image">
+      <img src="Design sem nome (55) - cópia.png" alt="Kundenfeedback zum Ultimate Brand Bundle">
+    </div>
+  </section>
+
+  <!-- BONUS SECTION -->
+  <section class="bonus-section">
+    <h2>Kaufe heute und du erhältst</h2>
+    <div class="bonus-grid">
+      <div class="bonus-item">
+        <img src="tech pack.png" alt="Tech Pack">
+        <p>Professionelle Tech Pack Vorlage in PDF zum Bearbeiten + Anwendungsbeispiele</p>
+      </div>
+      <div class="bonus-item">
+        <img src="atualizacoes.png" alt="Lebenslanger Zugang">
+        <p>Lebenslanger Zugang + Updates, ohne einen weiteren Cent zu zahlen</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL OFFER -->
+  <section class="final-offer">
+    <div class="urgency-tag">DIE AKTION ENDET BALD</div>
+    <h2>Letzte Chance: Das Angebot läuft aus…</h2>
+
+    <div class="countdown" id="countdown">
+      <div class="countdown-unit">
+        <div class="number" id="days">00</div>
+        <div class="label">Tage</div>
+      </div>
+      <div class="countdown-sep">:</div>
+      <div class="countdown-unit">
+        <div class="number" id="hours">00</div>
+        <div class="label">Std</div>
+      </div>
+      <div class="countdown-sep">:</div>
+      <div class="countdown-unit">
+        <div class="number" id="minutes">14</div>
+        <div class="label">Min</div>
+      </div>
+      <div class="countdown-sep">:</div>
+      <div class="countdown-unit">
+        <div class="number" id="seconds">42</div>
+        <div class="label">Sek</div>
+      </div>
+    </div>
+
+    <p class="limited-offer-label">Zeitlich begrenztes Angebot</p>
+    <p class="old-price-label">STATT <s>€97</s></p>
+    <div class="big-price">€24</div>
+
+    <ul class="feature-list">
+      <li>Einmalige Zahlung</li>
+      <li>Lebenslanger Zugang + Updates</li>
+      <li>Bonus inklusive</li>
+      <li>Sofortiger Zugang</li>
+      <li>7 Tage Garantie</li>
+    </ul>
+
+    <br>
+    <a href="https://pay.hotmart.com/G107541740X?checkoutMode=10&offDiscount=RABATT75" target="_blank" rel="noopener" class="cta-button" style="max-width: 400px; margin: 0 auto;" onclick="fbq('track', 'InitiateCheckout');">Jetzt kaufen – 75% RABATT</a>
+    <p class="urgency-text">🚀 Deine letzte Chance, wie eine große Marke zu handeln und am Markt zu wachsen!</p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <h2>Häufig gestellte Fragen</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">Was ist das Ultimate Brand Bundle?</div>
+      <div class="faq-answer">Das Ultimate Brand Bundle ist ein komplettes Toolkit für alle, die eine Modemarke besitzen oder gründen möchten. Es enthält über 500 Mockups, Vektoren, Vorlagen, Checklisten und vieles mehr.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Was ist im Bundle enthalten?</div>
+      <div class="faq-answer">Über 500 PNG-Mockups, über 400 Vektoren, über 30 Photoshop-Mockups, 3D Blender T-Shirt, 5 wesentliche Tabellen (Preisgestaltung, Lager, Verkauf, Influencer, Planung), Tech Pack Vorlage, Kollektions-Checkliste und über 100 Content-Ideen für Social Media.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Wie erhalte ich das Produkt?</div>
+      <div class="faq-answer">Nach dem Kauf erhältst du sofortigen Zugang per E-Mail mit dem Link zum Mitgliederbereich, wo du alle Dateien herunterladen kannst.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Muss ich eine monatliche Gebühr zahlen?</div>
+      <div class="faq-answer">Nein. Es ist eine einmalige Zahlung mit lebenslangem Zugang und kostenlosen Updates.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Kann ich die Mockups für kommerzielle Projekte nutzen?</div>
+      <div class="faq-answer">Ja. Du kannst alle Dateien in deinen kommerziellen Projekten und in deiner eigenen Modemarke nutzen.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Bietet ihr Support an?</div>
+      <div class="faq-answer">Ja. Wir bieten Support per E-Mail und Instagram, um bei allen Fragen zu helfen.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Werden neue Inhalte hinzugefügt?</div>
+      <div class="faq-answer">Ja. Wir fügen regelmäßig neue Inhalte hinzu und du erhältst alle Updates kostenlos.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">In welchen Programmen funktioniert es?</div>
+      <div class="faq-answer">Die Dateien funktionieren in Adobe Photoshop, Adobe Illustrator, CorelDRAW, Canva, Blender, Notion und Google Sheets.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Gibt es eine Garantie?</div>
+      <div class="faq-answer">Ja. Wir bieten 7 Tage Geld-zurück-Garantie. Wenn du nicht zufrieden bist, erstatten wir dir den vollen Betrag zurück.</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo"><img src="logo-ybk-DaewnsGz.png" alt="YOUR BRAND KITS"></div>
+    <div class="copyright">© 2025 | Alle Rechte vorbehalten.</div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>KONTAKT</h4>
+        <p>📷 @yourbrandkits</p>
+        <p>contato@yourbrandkits.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>RICHTLINIEN</h4>
+        <a href="#">Datenschutzerklärung</a>
+        <a href="#">Nutzungsbedingungen</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ toggle
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        q.parentElement.classList.toggle('active');
+      });
+    });
+
+    // Countdown timer (15 min countdown, restarts when hits zero)
+    let totalSeconds = 15 * 60;
+    function updateCountdown() {
+      if (totalSeconds <= 0) {
+        document.getElementById('days').textContent = '00';
+        document.getElementById('hours').textContent = '00';
+        document.getElementById('minutes').textContent = '00';
+        document.getElementById('seconds').textContent = '00';
+        document.getElementById('topTimer').textContent = 'Angebot beendet';
+        return;
+      }
+      const days = Math.floor(totalSeconds / 86400);
+      const hours = Math.floor((totalSeconds % 86400) / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+      document.getElementById('days').textContent = String(days).padStart(2,'0');
+      document.getElementById('hours').textContent = String(hours).padStart(2,'0');
+      document.getElementById('minutes').textContent = String(minutes).padStart(2,'0');
+      document.getElementById('seconds').textContent = String(seconds).padStart(2,'0');
+      document.getElementById('topTimer').textContent =
+        String(minutes).padStart(2,'0') + ' : ' + String(seconds).padStart(2,'0');
+      totalSeconds--;
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+
+</body>
+</html>
